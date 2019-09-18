@@ -1,0 +1,14 @@
+<launch>
+    <include file="$(find realsense_camera)/launch/r200_nodelet_rgbd.launch">
+    </include>
+
+    <node pkg="depthimage_to_laserscan" type="depthimage_to_laserscan" name="depthimage_to_laserscan" output="screen">
+        <remap from="image" to="/camera/depth/image_raw" />
+    </node>
+
+<!--    <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
+    </node>
+-->
+
+    <node pkg="tf" type="static_transform_publisher" name="base_link_to_camera_link" args="0.0 0.0 0.1 0.0 0.0 0.0 base_link camera_link 1000" />
+</launch>

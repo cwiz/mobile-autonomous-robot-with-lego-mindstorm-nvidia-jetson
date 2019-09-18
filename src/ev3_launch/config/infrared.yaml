@@ -1,0 +1,10 @@
+Ev3Infrared:
+  type: h4r_ev3_control/Ev3InfraredController
+  frame_id: base_link
+  topic_name: /ir
+  publish_rate: 10
+  port: in4
+  min_range: 0.0
+  max_range: 0.1
+  mode: proximity
+#  mode: remote 

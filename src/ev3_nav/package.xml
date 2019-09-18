@@ -1,0 +1,40 @@
+<package>
+  <name>ev3_nav</name>
+  <version>0.0.1</version>
+
+  <description>ROS EV3 Navigation package</description>
+
+  <maintainer email="mikael@valdev.com">Mikael Valot</maintainer>
+  <license>BSD</license>
+  <url type="website">http://</url>
+  <url type="bugtracker">https://</url>
+  <author email="mikael@valdev.com">Mikael Valot</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>move_base_msgs</build_depend>
+  <build_depend>visualization_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>actionlib</build_depend>
+  <build_depend>orocos_kdl</build_depend>
+  <build_depend>dynamic_reconfigure</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>nav_msgs</run_depend>
+  <run_depend>move_base_msgs</run_depend>
+  <run_depend>visualization_msgs</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>actionlib</run_depend>
+  <run_depend>orocos_kdl</run_depend>
+  <run_depend>dynamic_reconfigure</run_depend>
+
+  <export>
+
+  </export>
+</package>
