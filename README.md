@@ -2,20 +2,24 @@
 
 ## Project Description
 
-This project is practial application of moddern approach to robotics. Crawler robot built on LEGO Mindstorm platform and NVIDIA Jetson Nano single-board computer.
+This project explores moder mobile robotic prototyping tools as well as evaluates state of the art software to build self-maping mobile robot on tracked platform. Robotic platform is built with LEGO Mindstorm set with EV3 Brick as motor and sensor controller. NVIDIA Jetson Nano used to build robotic brain. Software is built for Robotic Operating System ROS platform with perception and actuation modules as neural networks running on PyToch. Jetson Nano has CUDA cores to accelerate neural networks.
 
 ## Project Goals
 
-* Application of state-of-the-art tools for building robotic prototype
-* Evaluation of NVIDIA Jetson Platform 
-* Evalution of current state of RoS for building mobile robots
+* Evalution of state of current state of the art robot prototyping approaches
+* Evalution of NVIDIA Jetson Platform to mobile robotics
+* Evalution of ROS Melodic
 
 ## Hardware
 
 * [LEGO Mindstorm EV3 31313 Kit](https://www.amazon.com/LEGO-MINDSTORMS-31313-Educational-Programming/dp/B00CWER3XY) $350 
-* [Jetson Nano] (https://store.nvidia.com/store;jsessionid=EF8B35BF82FB37AA99EDC042B8E0AF31?Action=DisplayPage&Locale=en_US&SiteID=nvidia&id=QuickBuyCartPage) $100
+* [Jetson Nano](https://store.nvidia.com/store;jsessionid=EF8B35BF82FB37AA99EDC042B8E0AF31?Action=DisplayPage&Locale=en_US&SiteID=nvidia&id=QuickBuyCartPage) $100
 
-## Getting started
+## Technical formulation of the problem
+
+### 1. Getting started
+
+First step of this project is to get robot up and running. We would assemble robot platform using LEGO, flash SD cards for EV3 Brick and Jetson Nano. In the end we will be able to control robot using keyboard.
 
 * Flash Jetson Nano [SD Image](https://developer.nvidia.com/jetson-nano-sd-card-image-r322) to 16+ GB MicroSD CARD
 * Flash [Yocto Linux](http://hacks4ros.github.io/h4r_ev3_ctrl/) on 8+ SD Card for LEGO EV3 Brick
@@ -31,7 +35,19 @@ This project is practial application of moddern approach to robotics. Crawler ro
 * Run ```roslaunch ./motors.launch ev3_hostname:=ev3dev``` in one tab
 * Run ```rosrun teleop_twist_keyboard teleop_twist_keyboard.py``` to start remote controller via keyboard
 
+### 2. Automating processes on start and shutdown
+
+### 3. Modelling robot in Gazeebo
+
+### 4. Adding Intel RealSense depth camera and building map with SLAM
+
+### 5. Robot Perception. Semantic Segmentation and Identifying Objects
+
+### 6. Searching mapped space for cat. Trying to build model robot's behabious using Reinforcement Learning
+
 ## Software Architecture
+
+(Describe RoS modules)
 
 ### ROS Types
 
@@ -39,7 +55,13 @@ This project is practial application of moddern approach to robotics. Crawler ro
 
 ## Mathematical Models
 
+(Describe SLAM)
+
+(Describe Neurla Networks)
+
 ## Acknowledgements
+
+1. [ROS Robot With Lego EV3 and Docker](https://www.instructables.com/id/ROS-Robot-With-Lego-EV3-and-Docker/) for ev3 control ros module
 
 ## Future Work
 
