@@ -1,4 +1,4 @@
-# Mobile Autonomous Robot with LEGO Mindstorm and NVIDIA Jetson Nano on ROS
+# Mobile Autonomous Robot with LEGO Mindstorm and NVIDIA Jetson Nano on ROS Melodic
 
 ## Project Description
 
