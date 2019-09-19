@@ -1,4 +1,4 @@
-# Mobile Autonomous Robot with LEGO Mindstorm and NVIDIA Jetson Nano on ROS Pplatform
+# Mobile Autonomous Robot with LEGO Mindstorm and NVIDIA Jetson Nano on ROS
 
 ## Project Description
 
