@@ -1,19 +1,19 @@
-# Autonomous Robot with LEGO Mindstorm, NVIDIA Jetson Nano and RoS
+# Mobile Autonomous Robot with LEGO Mindstorm and NVIDIA Jetson Nano on ROS Pplatform
 
 ## Project Description
 
-This project explores moder mobile robotic prototyping tools as well as evaluates state of the art software to build self-maping mobile robot on tracked platform. Robotic platform is built with LEGO Mindstorm set with EV3 Brick as motor and sensor controller. NVIDIA Jetson Nano used to build robotic brain. Software is built for Robotic Operating System ROS platform with perception and actuation modules as neural networks running on PyToch. Jetson Nano has CUDA cores to accelerate neural networks.
+This project explores modern mobile autonomous robotics prototyping. Robotic platform is built with LEGO Mindstorm set with EV3 Brick as motor and sensor controller and NVIDIA Jetson Nano as more powerful computer with accelerated neural networks on CUDA. ROS Melodic is being used as software platform.
 
 ## Project Goals
 
-* Evalution of state of current state of the art robot prototyping approaches
-* Evalution of NVIDIA Jetson Platform to mobile robotics
-* Evalution of ROS Melodic
+* Evaluate current state of the art of mobile autonomous robotics
+* Evaluate of NVIDIA Jetson Platform to mobile robotics
+* Evaluate of ROS Melodic
 
 ## Hardware
 
-* [LEGO Mindstorm EV3 31313 Kit](https://www.amazon.com/LEGO-MINDSTORMS-31313-Educational-Programming/dp/B00CWER3XY) $350 
-* [Jetson Nano](https://store.nvidia.com/store;jsessionid=EF8B35BF82FB37AA99EDC042B8E0AF31?Action=DisplayPage&Locale=en_US&SiteID=nvidia&id=QuickBuyCartPage) $100
+* [LEGO Mindstorm EV3 31313 Kit](https://www.amazon.com/LEGO-MINDSTORMS-31313-Educational-Programming/dp/B00CWER3XY)
+* [Jetson Nano](https://store.nvidia.com/store;jsessionid=EF8B35BF82FB37AA99EDC042B8E0AF31?Action=DisplayPage&Locale=en_US&SiteID=nvidia&id=QuickBuyCartPage)
 
 ## Technical formulation of the problem
 
