@@ -37,6 +37,13 @@ First step of this project is to get robot up and running. We would assemble rob
 
 ### 2. Automating processes on start and shutdown
 
+#### EV3 Brick
+
+* Setup ROS master via ```ros_master_set```
+* Start from host computer via ```ssh root@ev3dev ev3_manager```
+
+#### Jetson NANO
+
 ### 3. Modelling robot in Gazeebo
 
 ### 4. Adding Intel RealSense depth camera and building map with SLAM
@@ -47,7 +54,9 @@ First step of this project is to get robot up and running. We would assemble rob
 
 ## Software Architecture
 
-(Describe RoS modules)
+Robot has 3 joint which are controller through ev3_controller: Joint_A, Joint_B and Joint_C. Joints A and B are [EV3 Large Servo Motor](https://www.lego.com/en-us/product/ev3-large-servo-motor-45502) and joint C is [Medium Servo Motor](https://www.lego.com/en-us/product/ev3-medium-servo-motor-45503)
+
+### ROS Nodes
 
 ### ROS Types
 
