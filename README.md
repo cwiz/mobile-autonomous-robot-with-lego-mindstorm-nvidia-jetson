@@ -47,15 +47,22 @@ Robot has 3 joint which are controller through ev3_controller: Joint_A, Joint_B 
 
 ### ROS Nodes
 
+#### EV3_manager
+
+[Source Code](https://github.com/Hacks4ROS/h4r_ev3_ctrl/tree/develop/h4r_ev3_manager)
+
+EV3_maneger exposes controller ports A, B, C and D as well as sensor ports 1 though 4. Our robot has no senosrs attached to EV3. Ports C and B attached to large seros and port A is attached to medium servo. EV3_manager exposes these servos with [twist](https://docs.ros.org/api/geometry_msgs/html/msg/Twist.html) interface
+
 ### ROS Types
 
+```c
+# This expresses velocity in free space broken into its linear and angular parts.
+Vector3  linear
+Vector3  angular
+```
 ### ROS Topics
 
 ## Mathematical Models
-
-(Describe SLAM)
-
-(Describe Neurla Networks)
 
 ## Acknowledgements
 
