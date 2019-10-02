@@ -17,40 +17,29 @@ This project explores modern mobile autonomous robotics prototyping. Robotic pla
 
 ## Technical formulation of the problem
 
-### 1. Getting started
+### Getting started
 
 First step of this project is to get robot up and running. We would assemble robot platform using LEGO, flash SD cards for EV3 Brick and Jetson Nano. In the end we will be able to control robot using keyboard.
 
-* Flash Jetson Nano [SD Image](https://developer.nvidia.com/jetson-nano-sd-card-image-r322) to 16+ GB MicroSD CARD
-* Flash [Yocto Linux](http://hacks4ros.github.io/h4r_ev3_ctrl/) on 8+ SD Card for LEGO EV3 Brick
-* Assemble Crawler Robot following [instructions](https://www.lego.com/en-gb/mindstorms/build-a-robot/gripp3r). Stop at page 74.
-* Boot EV3. Connect keyboard and login as root (no password). Connect EV3 to Jetson NANO via USB. Type gadget_on to enable USB networking.
-* Set up USB Network interface on Jetson Nano using manual networking setting. Set IP to 192.168.10.X
-* EV3 brick will be available on 192.168.10.123. Add ```192.168.10.123  ev3dev``` to /etc/hosts.
-* Install ROS Melodic on Jetson Nano via aptitude
-* Start roscore on Jetson Nano to start ros master.
-* Run ```ros_master_set 192.168.10.1``` on EV3 ssh. Then run ```ev3_manager``` to start ros ev3 node
-* Copy this repo's src to $HOME/catkin/src
-* Run ```cd $HOME/catkin/; catkin_make```
-* Run ```roslaunch ./motors.launch ev3_hostname:=ev3dev``` in one tab
-* Run ```rosrun teleop_twist_keyboard teleop_twist_keyboard.py``` to start remote controller via keyboard
+1. Flash Jetson Nano [SD Image](https://developer.nvidia.com/jetson-nano-sd-card-image-r322) to 16+ GB MicroSD CARD
+2. Flash [Yocto Linux](http://hacks4ros.github.io/h4r_ev3_ctrl/) on 8+ SD Card for LEGO EV3 Brick
+3. Assemble Crawler Robot following [instructions](https://www.lego.com/en-gb/mindstorms/build-a-robot/gripp3r). Stop at page 74.
+4. Boot EV3. Connect keyboard and login as root (no password). Connect EV3 to Jetson NANO via USB. Type gadget_on to enable USB networking.
+5. Set up USB Network interface on Jetson Nano using manual networking setting. Set IP to 192.168.10.X
+6. EV3 brick will be available on 192.168.10.123. Add ```192.168.10.123  ev3dev``` to /etc/hosts.
+7. Install ROS Melodic on Jetson Nano via aptitude
+8. Start roscore on Jetson Nano to start ros master.
+9. Run ```ros_master_set 192.168.10.1``` on EV3 ssh. Then run ```ev3_manager``` to start ros ev3 node
+10. Copy this repo's src to $HOME/catkin/src
+11. Run ```cd $HOME/catkin/; catkin_make```
+12. Run ```roslaunch ./motors.launch ev3_hostname:=ev3dev``` in one tab
+13. Run ```rosrun teleop_twist_keyboard teleop_twist_keyboard.py``` to start remote controller via keyboard
 
-### 2. Automating processes on start and shutdown
+At this point we will be able to control robot with keyboard. 
 
-#### EV3 Brick
+### Modelling robot in Gazeebo Virtual Environment
 
-* Setup ROS master via ```ros_master_set```
-* Start from host computer via ```ssh root@ev3dev ev3_manager```
-
-#### Jetson NANO
-
-### 3. Modelling robot in Gazeebo
-
-### 4. Adding Intel RealSense depth camera and building map with SLAM
-
-### 5. Robot Perception. Semantic Segmentation and Identifying Objects
-
-### 6. Searching mapped space for cat. Trying to build model robot's behabious using Reinforcement Learning
+Now that we have phisical robot we would like to also have it in digital form. We would need to assemble our robot in [Lego Digital Designer](https://www.lego.com/en-us/ldd) and then convert model to URDF.
 
 ## Software Architecture
 
