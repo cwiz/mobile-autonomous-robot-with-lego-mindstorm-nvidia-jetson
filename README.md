@@ -37,10 +37,6 @@ First step of this project is to get robot up and running. We would assemble rob
 
 At this point we will be able to control robot with keyboard. 
 
-### Modelling robot in Gazeebo Virtual Environment
-
-Now that we have phisical robot we would like to also have it in digital form. We would need to assemble our robot in [Lego Digital Designer](https://www.lego.com/en-us/ldd) and then convert model to URDF.
-
 ## Software Architecture
 
 Robot has 3 joint which are controller through ev3_controller: Joint_A, Joint_B and Joint_C. Joints A and B are [EV3 Large Servo Motor](https://www.lego.com/en-us/product/ev3-large-servo-motor-45502) and joint C is [Medium Servo Motor](https://www.lego.com/en-us/product/ev3-medium-servo-motor-45503)
@@ -71,5 +67,3 @@ Vector3  angular
 ## Future Work
 
 ## References
-
-
