@@ -43,11 +43,9 @@ Robot has 3 joint which are controller through ev3_controller: Joint_A, Joint_B 
 
 ### ROS Nodes
 
-#### EV3_manager
+#### [EV3_manager](https://github.com/Hacks4ROS/h4r_ev3_ctrl/tree/develop/h4r_ev3_manager)
 
-[Source Code](https://github.com/Hacks4ROS/h4r_ev3_ctrl/tree/develop/h4r_ev3_manager)
-
-EV3_maneger exposes controller ports A, B, C and D as well as sensor ports 1 though 4. Our robot has no senosrs attached to EV3. Ports C and B attached to large seros and port A is attached to medium servo. EV3_manager exposes these servos with [twist](https://docs.ros.org/api/geometry_msgs/html/msg/Twist.html) interface
+EV3_manager is a ROS node running on EV3. We will be using it to control robot movement. EV3 has four controller ports to which servos can be attached and four sensor ports. We have large servos attached to ports C and B and medium servo attached to port A. EV3_manager exposes these servos with [twist] interface (https://docs.ros.org/api/geometry_msgs/html/msg/Twist.html) interface.
 
 ### ROS Types
 
